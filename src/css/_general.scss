@@ -1,6 +1,5 @@
 body {
   background: #eee;
-  //background: black;
 }
 
 $sidebarWidth: 110px;
@@ -38,7 +37,6 @@ $headerContentThumbSize: 42px;
             width: $headerContentThumbSize;
             height: $headerContentThumbSize;
             border-radius: 50%;
-            //border: 3px solid white;
             box-shadow: 0px 0px 0px 3px white;
             margin: 0px auto;
             display: block;
