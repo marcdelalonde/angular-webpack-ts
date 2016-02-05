@@ -1,0 +1,12 @@
+section.sidebar
+	.header
+		a(href="/")
+			img(src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg")
+	.sidebar-content
+		ul
+			li(ng-repeat="user in app.users")
+				a(href="#user")
+					img(ng-src="{{user.thumb}}")
+
+section.page-content
+	ui-view
