@@ -1,8 +1,6 @@
 import 'angular';
 import 'angular-ui-router';
-
-//angular.module('app.controllers', []);
-import {config as routesConfig} from './routes';
+import {config as routesConfig} from './routes/routes';
 
 // load our default (non specific) css
 import 'font-awesome/css/font-awesome.css';
