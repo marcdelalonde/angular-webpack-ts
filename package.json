@@ -9,7 +9,7 @@
     "build": "webpack --config webpack/webpack.build.js --NODE_ENV=production",
     "postinstall": "typings i"
   },
-  "author": "Brecht Billiet <billietbrecht@gmail.com>",
+  "author": "Marc Delalonde <marcdelalonde@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "angular": "1.5.0-rc.2",
