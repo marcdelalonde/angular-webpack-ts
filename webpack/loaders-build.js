@@ -1,7 +1,9 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = [
   { test: /\.ts(x?)$/, loader: 'ts-loader' },
-  { test: /\.css$/, loader: 'style-loader!css-loader' },
-  { test: /\.scss$/, loader: 'style-loader!css!sass' }, 
+  { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
+  { test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css!sass') }, 
   { test: /\.html$/, exclude: /node_modules/, loader: 'raw' }, 
   { test: /\.jade$/, loader: 'jade-loader' }, 
   { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&minetype=application/font-woff' }, 
